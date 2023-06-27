@@ -1,8 +1,12 @@
-shoppingList= ["milk","Bread", "Apple", "milk"];
-console.log(shoppingList,shoppingList.length);
-shoppingList[1] = "Banana";
-console.log(shoppingList,shoppingList.length);
-let list = shoppingList.lastIndexOf("milk");
-shoppingList.sort();
-shoppingList.reverse()
-console.log(shoppingList)
+const groceries = ["milk", "bread", "apples"]
+groceries.splice(1,1, "bananas", "eggs")
+groceries.splice(1,0, "carrots", "lettuce")
+groceries.pop()
+groceries.sort()
+console.log(groceries)
+const liquid = ["juice", "pop"]
+const comboFood = groceries.concat(liquid, liquid)
+
+console.log(comboFood)
+const popIndex = comboFood.lastIndexOf("pop")
+console.log(popIndex)
